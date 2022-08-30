@@ -1,8 +1,7 @@
-import Head from "next/head"
-import { Component } from 'react'
-import { attributes, react as HomeContent } from '../content/home.md';
-import '../styles/global.css'
-
+import Head from "next/head";
+import { Component } from "react";
+import { attributes, react as HomeContent } from "../content/home.md";
+import "../styles/global.css";
 
 export default class Home extends Component {
   render() {
@@ -19,12 +18,13 @@ export default class Home extends Component {
             {developments.map((dev, k) => (
               <li key={k}>
                 <h2>{dev.name}</h2>
-                <p className="font-extrabold ">{dev.description} asdf</p>
+
+                <p className="font-extrabold">{dev.description}</p>
               </li>
             ))}
           </ul>
         </article>
       </>
-    )
+    );
   }
 }
